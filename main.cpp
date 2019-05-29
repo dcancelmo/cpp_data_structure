@@ -1,7 +1,6 @@
 #include <iostream>
 #include "linkedlist.hpp"
-#include "queue.cpp"
-#include "stack.cpp"
+#include "queue.hpp"
 #include "stack.hpp"
 
 int main() {
