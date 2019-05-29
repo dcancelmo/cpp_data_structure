@@ -8,7 +8,7 @@
 template <typename T>
 class Node {
     T data;
-    Node* next;
+    Node<T>* next;
 
 public:
     explicit Node(T newData) {
@@ -24,7 +24,7 @@ public:
         return data;
     }
 
-    void setNext(Node* newNode) {
+    void setNext(Node<T>* newNode) {
         next = newNode;
     }
 
