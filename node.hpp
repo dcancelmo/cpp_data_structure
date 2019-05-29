@@ -20,7 +20,7 @@ public:
         data = newData;
     }
 
-    int getData() {
+    T getData() {
         return data;
     }
 
@@ -28,7 +28,7 @@ public:
         next = newNode;
     }
 
-    Node* getNext() {
+    Node<T>* getNext() {
         return next;
     }
 

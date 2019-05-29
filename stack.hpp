@@ -6,7 +6,7 @@
 #define DATA_STRUCTURES_STACK_HPP
 
 #include "node.hpp"
-#include "LinkedList.hpp"
+#include "linkedlist.hpp"
 
 template <typename T>
 class Stack {

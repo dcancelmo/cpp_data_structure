@@ -3,7 +3,7 @@
 ////
 //
 //#include <iostream>
-//#include "LinkedList.hpp"
+//#include "linkedlist.hpp"
 //
 //Node* LinkedList::getFirst() {
 //    return head;
@@ -102,6 +102,7 @@
 //        if (curr->getData() == num) return true;
 //        curr = curr->getNext();
 //    }
+//    return false;
 //}
 //
 //Node *LinkedList::removeFirst() {

@@ -5,7 +5,7 @@
 #ifndef DATA_STRUCTURES_QUEUE_HPP
 #define DATA_STRUCTURES_QUEUE_HPP
 
-#include "LinkedList.hpp"
+#include "linkedlist.hpp"
 
 template <typename T>
 class Queue {

@@ -45,11 +45,12 @@ public:
             if (curr->getData() == data) return true;
             curr = curr->getNext();
         }
+        return false;
     }
 
     void insert(T newData) {
         if (contains(newData)) {
-            std::cout << newData << " is already in the list.\n";
+            std::cout << newData << " is already in the list." << std::endl;
             return;
         }
         Node<T>* node = new Node<T>(newData);
@@ -63,7 +64,7 @@ public:
 
     void prepend(T newData) {
         if (contains(newData)) {
-            std::cout << newData << " is already in the list.\n";
+            std::cout << newData << " is already in the list." << std::endl;
             return;
         }
         Node<T>* node = new Node<T>(newData);
@@ -83,10 +84,10 @@ public:
             curr = curr->getNext();
             std::cout <<  ", " << curr->getData();
         }
-        std::cout << "]\n";
+        std::cout << "]" << std::endl;
     }
 
-    int removeData(T oldData) {
+    T removeData(T oldData) {
         Node<T>* curr = head;
         if (curr->getData() == oldData) {
             head = curr->getNext();
@@ -104,7 +105,7 @@ public:
         }
     }
 
-    int getAtPosition(int num) {
+    T getAtPosition(int num) {
         Node<T>* curr = head;
         for (int i = 1; i < num; i++) {
             curr = curr->getNext();
